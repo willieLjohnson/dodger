@@ -15,4 +15,12 @@ public class EnemyController : MonoBehaviour
     {
         transform.Translate(0, -speed * Time.deltaTime, 0);
     }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            Time.timeScale = 0;
+        }
+    }
 }
