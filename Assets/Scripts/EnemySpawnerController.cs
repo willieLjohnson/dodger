@@ -24,6 +24,7 @@ public class EnemySpawnerController : MonoBehaviour
     }
 
     void SpawnEnemy() {
+
         GameObject enemyClone;
 
         enemyClone = Instantiate(enemy, this.transform.position, this.transform.rotation) as GameObject;
